@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API DOCS</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: #000;
+        color: #fff;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+      }
+
+      h1 {
+        margin-bottom: 50px;
+      }
+      h2,
+      h3,
+      h4 {
+        margin-bottom: 6px;
+      }
+
+      section {
+        width: 100%;
+        margin-bottom: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>API ENDPOINT LIST</h1>
+
+      <section>
+        <code>
+          <h2>To Get Fake Person Object</h2>
+          <h3><%= url %>fake-person</h3>
+          <h3>Method - POST</h3>
+          <h3>Payload :</h3>
+          <h3>{ "generatePerson": ["firstName", "lastName", "age"] }</h3>
+          <p style="margin-top: 10px">
+            Also accept ["firstName","lastName", "email", "avatar", "age",
+            "address"]
+          </p>
+        </code>
+      </section>
+
+      <section>
+        <code>
+          <h2>To Get Random Number</h2>
+          <h3><%= url %>random-number?start=1&end=200</h3>
+          <h3>Method - GET</h3>
+        </code>
+      </section>
+
+      <section>
+        <code>
+          <h2>To Get String Info</h2>
+          <h3><%= url %>string-info</h3>
+          <h3>Method - POST</h3>
+          <h3>Payload :</h3>
+          <h3>{ "string": "HEE1@@5345@@$%#%&!*" }</h3>
+        </code>
+      </section>
+    </div>
+  </body>
+</html>
